@@ -1,4 +1,6 @@
-from task_manager.validation import (
+from operator import index
+
+from validation import (
     validate_task_title,
     validate_task_description,
     validate_due_date
@@ -35,9 +37,7 @@ def add_task(title, description, due_date):
 
 
 def mark_task_as_complete(index):
-    if not isinstance(index, int):
-        print("Index must be a number.")
-        return
+    index = index - 1  
 
     if index < 0 or index >= len(tasks):
         print("Invalid task index.")
