@@ -17,11 +17,12 @@ def main():
         None
         None
         None
+        
         elif choice == "5":
-            print("Exiting the program...")
+        print("Exiting the program...")
             break
         else:
-            print("Invalid choice. Please try again.")
+        print("Invalid choice. Please try again.")
         
 if __name__ == "__main__":
     main()
